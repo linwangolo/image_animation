@@ -1,0 +1,9 @@
+/.vscode
+__pycache__
+/venv
+video/
+image/
+generate.sh
+*.tar
+*.ipynb
+no_use/
