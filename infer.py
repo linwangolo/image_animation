@@ -117,9 +117,9 @@ class FaceDetect:
                         draw.rectangle(box_head, width=5)  # box.tolist()
                         if save_faces:
                             if not os.path.exists(save_path):
-                            os.mkdir(save_path)
-                        if not os.path.exists(os.path.join(save_path, 'faces')):
-                            os.mkdir(os.path.join(save_path, 'faces'))
+                                os.mkdir(save_path)
+                            if not os.path.exists(os.path.join(save_path, 'faces')):
+                                os.mkdir(os.path.join(save_path, 'faces'))
                             face_batch.append(extract_face(img, box_head, save_path=os.path.join(save_path,f'detected_face_{id_}-{i}.png')))
                         else:
                             face_batch.append(extract_face(img, box_head))

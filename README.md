@@ -1,16 +1,18 @@
 # Image Animation
+Swaping the face of a given video with a given image. 
 
 ## Installation
 
 It support `python3`. To install the dependencies run:
-```
+```bash
 pip install -r requirements.txt
+conda install -c conda-forge scikit-image
 ```
 
-For cropping videos during animation process, you need to install `ffmpeg` and `face-alligment`:
+For cropping videos during animation process, you need to install `ffmpeg` and `imageio-ffmpeg`:
 ```bash
 conda install ffmpeg
-pip install face-alligment
+pip install imageio-ffmpeg
 ```
 
 ## Pre-trained model
@@ -21,6 +23,7 @@ Download `vox-adv-cpk.pth.tar` from [here](https://drive.google.com/drive/folder
 ## How to use?
 
 ### Import images
+Using PIL to read images and make it as a list.
 ```python
 from PIL import Image
 img = Image.open(PATH)
