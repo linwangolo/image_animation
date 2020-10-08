@@ -41,8 +41,11 @@ detector = FaceDetect()
 boxes, probs, annotates, faces = detector.detect(img_ls, crop_size=None, mode = 'Extract_largest')
 ```
 If images in list are not in a same size, set `crop_size`.
+
 There're 4 modes: `Detect_bool`, `Detect`, `Extract_largest`, `Extract_all`.
+
 Images of faces will be saved in `face_result/faces`.
+
 If you want to get the annotation image (face boxes on image), set `save_annotate=True` and it will be save in `face_result/annotations`.
 
 Use `help(FaceDetect)` to see more arguments and details.
