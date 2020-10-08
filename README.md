@@ -1,5 +1,9 @@
 # Image Animation
-Swaping the face of a given video with a given image. 
+Swaping the detected face of a given video to a given image.
+
+This repo is based on [first order model](https://github.com/AliaksandrSiarohin/first-order-model). 
+The difference is that I added a face detection module for real-time face detection use.
+
 
 ## Installation
 
